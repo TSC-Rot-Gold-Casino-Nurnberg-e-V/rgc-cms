@@ -8,6 +8,7 @@ export default ({ env }) => ({
       user: env('DATABASE_USERNAME', 'postgres'),
       password: env('DATABASE_PASSWORD', 'banane'),
       ssl: env.bool('DATABASE_SSL', false),
+      connectionString: env('DATABASE_URL', ''),
     },
   },
 });
