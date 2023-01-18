@@ -19,11 +19,6 @@
     },
     "description": {
       "type": "richtext"
-    },
-    "Interessiert": {
-      "type": "boolean",
-      "default": true,
-      "required": false
     }
   }
 }
