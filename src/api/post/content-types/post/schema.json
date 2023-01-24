@@ -25,6 +25,16 @@
       "required": true,
       "unique": true,
       "private": true
+    },
+    "mediaCarousel": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
