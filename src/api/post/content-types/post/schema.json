@@ -26,15 +26,19 @@
       "unique": true,
       "private": true
     },
-    "mediaCarousel": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
+    "mainImage": {
       "type": "media",
-      "multiple": true
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "previewText": {
+      "type": "text",
+      "required": true,
+      "maxLength": 80,
+      "unique": true
     }
   }
 }
