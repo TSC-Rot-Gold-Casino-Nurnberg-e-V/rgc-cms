@@ -37,7 +37,7 @@
     "previewText": {
       "type": "text",
       "required": true,
-      "maxLength": 80,
+      "maxLength": 256,
       "unique": true
     }
   }
