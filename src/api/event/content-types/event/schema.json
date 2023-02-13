@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eventName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "eventPreviewText": {
+      "type": "text"
+    },
+    "eventDescription": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "eventStartDate": {
+      "type": "date",
+      "required": true
+    },
+    "eventEndDate": {
+      "type": "date"
+    }
+  }
+}
