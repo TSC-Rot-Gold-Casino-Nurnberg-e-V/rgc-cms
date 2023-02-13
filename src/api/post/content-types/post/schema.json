@@ -17,9 +17,6 @@
       "required": true,
       "unique": true
     },
-    "description": {
-      "type": "richtext"
-    },
     "chronologicalPosition": {
       "type": "datetime",
       "required": true,
@@ -39,6 +36,14 @@
       "required": true,
       "maxLength": 256,
       "unique": true
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
