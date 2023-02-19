@@ -12,15 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "eventName": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "eventPreviewText": {
-      "type": "text"
+    "previewText": {
+      "type": "text",
+      "required": true
     },
-    "eventDescription": {
+    "description": {
       "type": "customField",
       "options": {
         "output": "HTML",
@@ -29,11 +30,11 @@
       "required": true,
       "customField": "plugin::ckeditor.CKEditor"
     },
-    "eventStartDate": {
+    "startDate": {
       "type": "date",
       "required": true
     },
-    "eventEndDate": {
+    "endDate": {
       "type": "date"
     }
   }
