@@ -1,4 +1,49 @@
-# 🚀 Getting started with Strapi
+# 🚀 RGC CMS
+
+Dieses Projekt ist das Content Management System für die modernisierte Webseite des Tanzsportclubs Rot-Gold-Casino Nürnberg.
+
+## Technologien
+
+- CMS: [Strapi](https://strapi.io/)
+- WYSIWYG mithilfe von [CKEditor](https://ckeditor.com/ckeditor-5/)
+
+## Installation
+
+1. Git-Repository klonen:
+
+   ```
+   git clone https://github.com/TSC-Rot-Gold-Casino-Nurnberg-e-V/rgc-cms.git
+   ```
+
+2. Ins Projektverzeichnis wechseln:
+
+   ```
+   cd rgc-cms
+   ```
+
+3. Erforderliche Pakete installieren:
+
+   ```
+   npm install
+   ```
+
+4. Umgebungskonfiguration erstellen:
+
+   ```
+   cp .env.example .env
+   ```
+
+   und die Werte in `.env` entsprechend anpassen
+
+5. Entwicklungsserver starten:
+
+   ```
+   npm run develop
+   ```
+
+---
+
+## Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
