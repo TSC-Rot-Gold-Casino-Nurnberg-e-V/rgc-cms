@@ -1,41 +1,42 @@
 # 🚀 RGC CMS
 
-Dieses Projekt ist das Content Management System für die modernisierte Webseite des Tanzsportclubs Rot-Gold-Casino Nürnberg.
+This project containes the content mangement system for the new web presense of the TSC Rot-Gold-Casino Nürnberg.
+It will contain all the tools to manage the content that will be published.
 
-## Technologien
+## Technologies
 
 - CMS: [Strapi](https://strapi.io/)
-- WYSIWYG mithilfe von [CKEditor](https://ckeditor.com/ckeditor-5/)
+- WYSIWYG with the help of [CKEditor](https://ckeditor.com/ckeditor-5/)
 
 ## Installation
 
-1. Git-Repository klonen:
+1. Git-Repository clone:
 
    ```
    git clone https://github.com/TSC-Rot-Gold-Casino-Nurnberg-e-V/rgc-cms.git
    ```
 
-2. Ins Projektverzeichnis wechseln:
+2. Switching to the project directory:
 
    ```
    cd rgc-cms
    ```
 
-3. Erforderliche Pakete installieren:
+3. Installing required packets:
 
    ```
    npm install
    ```
 
-4. Umgebungskonfiguration erstellen:
+4. Creating the enviroment varaible file based on the example:
 
    ```
    cp .env.example .env
    ```
 
-   und die Werte in `.env` entsprechend anpassen
+   and remember to change the values in the `.env` file.
 
-5. Entwicklungsserver starten:
+5. Start up the development server:
 
    ```
    npm run develop
