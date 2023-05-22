@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "courses",
+  "collectionName": "standard_courses",
   "info": {
-    "singularName": "course",
-    "pluralName": "courses",
-    "displayName": "StandardCourse",
-    "description": ""
+    "singularName": "standard-course",
+    "pluralName": "standard-courses",
+    "displayName": "StandardCourse"
   },
   "options": {
     "draftAndPublish": true
@@ -14,10 +13,18 @@
   "attributes": {
     "title": {
       "type": "string",
-      "unique": true,
-      "required": true
+      "required": true,
+      "unique": true
     },
     "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "schedule": {
       "type": "customField",
       "options": {
         "output": "HTML",
@@ -30,15 +37,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::trainer.trainer"
-    },
-    "schedule": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "standard"
-      },
-      "required": true,
-      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
