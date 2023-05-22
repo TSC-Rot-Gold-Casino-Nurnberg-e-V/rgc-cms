@@ -1,10 +1,10 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "courses",
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "Course",
+    "displayName": "StandardCourse",
     "description": ""
   },
   "options": {
@@ -26,19 +26,19 @@
       "required": true,
       "customField": "plugin::ckeditor.CKEditor"
     },
-    "previewImage": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "trainers": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::trainer.trainer",
-      "inversedBy": "courses"
+      "relation": "oneToMany",
+      "target": "api::trainer.trainer"
+    },
+    "schedule": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
