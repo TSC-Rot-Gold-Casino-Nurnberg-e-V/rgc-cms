@@ -14,4 +14,15 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  slugify: {
+    enabled: true,
+    config: {
+      contentTypes: {
+        offer: {
+          field: "slug",
+          references: "title",
+        },
+      },
+    },
+  },
 });
