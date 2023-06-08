@@ -1,0 +1,4 @@
+### GET offer "freizeittanz"
+GET http://localhost:1337/api/slugify/slugs/offer/freizeittanz?populate=*
+Authorization: Bearer {{auth_token}}
+Accept: application/json
