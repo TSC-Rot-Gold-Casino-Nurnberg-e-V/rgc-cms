@@ -1,0 +1,8 @@
+### GET offer "freizeittanz"
+GET http://localhost:1337/api/slugify/slugs/offer/turniertanz-standard
+  ?populate[0]=trainers
+  &populate[1]=trainings
+  &populate[2]=trainings.weekday
+  &populate[3]=faqs
+Authorization: Bearer {{auth_token}}
+Accept: application/json
