@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trainings",
+  "info": {
+    "singularName": "training",
+    "pluralName": "trainings",
+    "displayName": "Training",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "room": {
+      "type": "enumeration",
+      "enum": [
+        "Saal 1",
+        "Saal 2",
+        "Saal 3"
+      ],
+      "required": true
+    },
+    "trainers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::trainer.trainer",
+      "inversedBy": "trainings"
+    },
+    "start": {
+      "type": "time",
+      "required": true
+    },
+    "end": {
+      "type": "time",
+      "required": true
+    },
+    "offer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::offer.offer",
+      "inversedBy": "trainings"
+    },
+    "weekday": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::weekday.weekday"
+    }
+  }
+}

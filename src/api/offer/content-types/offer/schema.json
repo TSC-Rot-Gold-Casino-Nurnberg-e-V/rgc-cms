@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "trainers",
+  "collectionName": "offers",
   "info": {
-    "singularName": "trainer",
-    "pluralName": "trainers",
-    "displayName": "Trainer",
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "Angebot",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": true
@@ -23,30 +23,31 @@
         "output": "HTML",
         "preset": "standard"
       },
+      "required": true,
       "customField": "plugin::ckeditor.CKEditor"
     },
-    "licence": {
-      "type": "text",
-      "required": true
-    },
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "offers": {
+    "trainers": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::offer.offer",
-      "mappedBy": "trainers"
+      "target": "api::trainer.trainer",
+      "inversedBy": "offers"
     },
     "trainings": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::training.training",
-      "mappedBy": "trainers"
+      "mappedBy": "offer"
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::faq.faq",
+      "inversedBy": "offers"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
