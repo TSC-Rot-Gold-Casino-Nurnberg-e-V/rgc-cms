@@ -36,6 +36,10 @@
     },
     "endDate": {
       "type": "date"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

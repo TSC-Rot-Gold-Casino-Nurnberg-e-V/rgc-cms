@@ -22,6 +22,14 @@ module.exports = ({ env }) => ({
           field: "slug",
           references: "title",
         },
+        post: {
+          field: "slug",
+          references: "title",
+        },
+        event: {
+          field: "slug",
+          references: "title",
+        },
       },
     },
   },
