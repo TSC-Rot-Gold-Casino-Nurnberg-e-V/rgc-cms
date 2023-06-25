@@ -1,4 +1,5 @@
 version: '3.8'
+name: rgc-cms
 services:
   rgc-cms:
     container_name: rgc-cms
