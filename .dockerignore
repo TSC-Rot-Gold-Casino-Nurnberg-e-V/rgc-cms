@@ -1,0 +1,6 @@
+.tmp/
+.cache/
+.git/
+node_modules/
+.env
+backup/
