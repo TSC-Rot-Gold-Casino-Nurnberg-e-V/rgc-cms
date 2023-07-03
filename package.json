@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build",
+    "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d",
     "docker:prod": "docker-compose -f docker-compose.yml up -d --build"
   },
   "dependencies": {
