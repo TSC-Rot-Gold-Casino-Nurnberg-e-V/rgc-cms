@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lizenzen",
+  "info": {
+    "singularName": "lizenz",
+    "pluralName": "lizenzen",
+    "displayName": "Lizenz"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "trainers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::trainer.trainer",
+      "inversedBy": "lizenzen"
+    }
+  }
+}

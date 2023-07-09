@@ -23,18 +23,20 @@
         "output": "HTML",
         "preset": "standard"
       },
-      "customField": "plugin::ckeditor.CKEditor"
+      "customField": "plugin::ckeditor.CKEditor",
+      "required": true
     },
     "licence": {
       "type": "text",
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "offers": {
       "type": "relation",
@@ -46,6 +48,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::training.training",
+      "mappedBy": "trainers"
+    },
+    "lizenzen": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lizenz.lizenz",
       "mappedBy": "trainers"
     }
   }
