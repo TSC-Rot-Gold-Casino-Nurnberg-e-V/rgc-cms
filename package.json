@@ -7,7 +7,9 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build",
+    "docker:prod": "docker-compose -f docker-compose.yml up -d --build"
   },
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
