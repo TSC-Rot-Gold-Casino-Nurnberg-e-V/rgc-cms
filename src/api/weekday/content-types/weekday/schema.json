@@ -12,12 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titel": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "value": {
+    "wert": {
       "type": "integer",
       "required": true,
       "unique": true,

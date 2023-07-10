@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "veranstaltungen",
+  "info": {
+    "singularName": "veranstaltung",
+    "pluralName": "veranstaltungen",
+    "displayName": "Veranstaltung"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titel": {
+      "type": "string",
+      "required": true
+    },
+    "vorschautext": {
+      "type": "text",
+      "required": true
+    },
+    "beschreibung": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "start": {
+      "type": "date",
+      "required": true
+    },
+    "ende": {
+      "type": "date"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titel",
+      "required": true
+    }
+  }
+}

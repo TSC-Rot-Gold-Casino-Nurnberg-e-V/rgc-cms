@@ -4,19 +4,20 @@
   "info": {
     "singularName": "faq",
     "pluralName": "faqs",
-    "displayName": "FAQ"
+    "displayName": "FAQ",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "question": {
+    "frage": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "answer": {
+    "antwort": {
       "type": "customField",
       "options": {
         "output": "HTML",
@@ -25,10 +26,10 @@
       "required": true,
       "customField": "plugin::ckeditor.CKEditor"
     },
-    "offers": {
+    "angebote": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::offer.offer",
+      "target": "api::angebot.angebot",
       "mappedBy": "faqs"
     }
   }

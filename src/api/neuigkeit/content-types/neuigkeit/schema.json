@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "neuigkeiten",
+  "info": {
+    "singularName": "neuigkeit",
+    "pluralName": "neuigkeiten",
+    "displayName": "Neuigkeit"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titel": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "datum": {
+      "type": "datetime",
+      "required": true,
+      "unique": true
+    },
+    "vorschaubild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "vorschautext": {
+      "type": "text",
+      "required": true,
+      "unique": true,
+      "maxLength": 256
+    },
+    "beschreibung": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titel",
+      "required": true
+    }
+  }
+}

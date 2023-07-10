@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "impressen",
+  "info": {
+    "singularName": "impressum",
+    "pluralName": "impressen",
+    "displayName": "Impressum"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "inhalt": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

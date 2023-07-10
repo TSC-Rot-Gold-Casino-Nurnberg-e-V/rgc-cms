@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vorstandsmitglieder",
+  "info": {
+    "singularName": "vorstandsmitglied",
+    "pluralName": "vorstandsmitglieder",
+    "displayName": "Vorstandsmitglied"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "rolle": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "telefonnummer": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "bild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

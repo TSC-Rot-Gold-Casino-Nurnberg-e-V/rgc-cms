@@ -12,12 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titel": {
       "type": "string",
       "required": true,
       "unique": false
     },
-    "room": {
+    "saal": {
       "type": "enumeration",
       "enum": [
         "Saal 1",
@@ -26,30 +26,30 @@
       ],
       "required": true
     },
-    "trainers": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::trainer.trainer",
-      "inversedBy": "trainings"
-    },
     "start": {
       "type": "time",
       "required": true
     },
-    "end": {
+    "ende": {
       "type": "time",
       "required": true
     },
-    "offer": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::offer.offer",
-      "inversedBy": "trainings"
-    },
-    "weekday": {
+    "wochentag": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::weekday.weekday"
+    },
+    "trainers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::trainer.trainer",
+      "mappedBy": "trainings"
+    },
+    "angebot": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::angebot.angebot",
+      "inversedBy": "trainings"
     }
   }
 }

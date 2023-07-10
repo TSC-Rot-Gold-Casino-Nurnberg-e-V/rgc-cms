@@ -19,7 +19,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::trainer.trainer",
-      "inversedBy": "lizenzen"
+      "mappedBy": "lizenzen"
     }
   }
 }

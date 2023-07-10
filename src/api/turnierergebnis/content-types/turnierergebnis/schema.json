@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "turnierergebnisse",
+  "info": {
+    "singularName": "turnierergebnis",
+    "pluralName": "turnierergebnisse",
+    "displayName": "Turnierergebnis"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start": {
+      "type": "date",
+      "required": true
+    },
+    "ende": {
+      "type": "date",
+      "required": false
+    },
+    "titel": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
