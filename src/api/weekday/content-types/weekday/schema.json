@@ -16,13 +16,6 @@
       "type": "string",
       "required": true,
       "unique": true
-    },
-    "wert": {
-      "type": "integer",
-      "required": true,
-      "unique": true,
-      "max": 6,
-      "min": 0
     }
   }
 }
