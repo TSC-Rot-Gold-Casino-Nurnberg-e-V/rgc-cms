@@ -1,11 +1,11 @@
 ### GET offer "freizeittanz"
-GET http://localhost:1337/api/slugify/slugs/offer/turniertanz-standard
+GET http://localhost:1337/api/slugify/slugs/angebot/turniertanz-standard
   ?populate[0]=trainers
-  &populate[1]=trainers.image
+  &populate[1]=trainers.bild
   &populate[2]=trainings
-  &populate[3]=trainings.weekday
+  &populate[3]=trainings.wochentag
   &populate[4]=trainings.trainers
-  &populate[5]=trainings.trainers.image
+  &populate[5]=trainings.trainers.bild
   &populate[6]=trainings.trainers.lizenzen
   &populate[7]=trainers.lizenzen
   &populate[8]=faqs
