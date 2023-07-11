@@ -18,17 +18,17 @@ module.exports = ({ env }) => ({
     enabled: true,
     config: {
       contentTypes: {
-        offer: {
+        angebot: {
           field: "slug",
-          references: "title",
+          references: "titel",
         },
-        post: {
+        neuigkeit: {
           field: "slug",
-          references: "title",
+          references: "titel",
         },
-        event: {
+        veranstaltung: {
           field: "slug",
-          references: "title",
+          references: "titel",
         },
       },
     },
