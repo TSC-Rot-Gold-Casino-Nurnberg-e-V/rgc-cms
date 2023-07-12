@@ -1,4 +1,4 @@
 ### GET posts
-GET http://localhost:1337/api/posts?populate=*
+GET http://localhost:1337/api/neuigkeiten?populate=*
 Authorization: Bearer {{auth_token}}
 Accept: application/json
