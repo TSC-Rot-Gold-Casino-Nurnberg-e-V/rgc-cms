@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
-    "@strapi/plugin-i18n": "4.5.5",
-    "@strapi/plugin-users-permissions": "4.5.5",
-    "@strapi/provider-upload-cloudinary": "^4.5.6",
-    "@strapi/strapi": "4.5.5",
+    "@strapi/plugin-i18n": "4.11.5",
+    "@strapi/plugin-users-permissions": "4.11.5",
+    "@strapi/provider-upload-cloudinary": "4.11.5",
+    "@strapi/strapi": "4.11.5",
     "pg": "8.6.0",
-    "strapi-plugin-slugify": "^2.3.2"
+    "strapi-plugin-slugify": "^2.3.3"
   },
   "author": {
     "name": "A Strapi developer"
