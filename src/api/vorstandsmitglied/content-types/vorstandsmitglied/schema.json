@@ -4,7 +4,8 @@
   "info": {
     "singularName": "vorstandsmitglied",
     "pluralName": "vorstandsmitglieder",
-    "displayName": "Vorstandsmitglied"
+    "displayName": "Vorstandsmitglied",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +24,7 @@
     },
     "telefonnummer": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": true
     },
     "email": {
@@ -32,12 +33,12 @@
       "unique": true
     },
     "bild": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
