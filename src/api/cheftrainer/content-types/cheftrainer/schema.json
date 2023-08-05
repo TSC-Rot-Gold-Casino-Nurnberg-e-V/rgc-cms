@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cheftrainers",
+  "info": {
+    "singularName": "cheftrainer",
+    "pluralName": "cheftrainers",
+    "displayName": "Cheftrainer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titel": {
+      "type": "string",
+      "required": true
+    },
+    "trainer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::trainer.trainer"
+    }
+  }
+}
