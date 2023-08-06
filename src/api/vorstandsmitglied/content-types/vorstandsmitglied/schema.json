@@ -39,6 +39,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "reihenfolge": {
+      "type": "integer"
     }
   }
 }
