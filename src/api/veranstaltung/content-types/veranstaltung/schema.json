@@ -4,7 +4,8 @@
   "info": {
     "singularName": "veranstaltung",
     "pluralName": "veranstaltungen",
-    "displayName": "Veranstaltung"
+    "displayName": "Veranstaltung",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -39,6 +40,11 @@
       "type": "uid",
       "targetField": "titel",
       "required": true
+    },
+    "ort": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ort.ort"
     }
   }
 }
