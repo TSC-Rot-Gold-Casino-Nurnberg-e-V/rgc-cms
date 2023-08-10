@@ -16,10 +16,6 @@
       "type": "string",
       "required": true
     },
-    "vorschautext": {
-      "type": "text",
-      "required": true
-    },
     "beschreibung": {
       "type": "customField",
       "options": {
