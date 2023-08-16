@@ -14,10 +14,10 @@
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
     "@retikolo/drag-drop-content-types": "^1.3.9",
-    "@strapi/plugin-i18n": "4.11.5",
-    "@strapi/plugin-users-permissions": "4.11.5",
-    "@strapi/provider-upload-cloudinary": "4.11.5",
-    "@strapi/strapi": "4.11.5",
+    "@strapi/plugin-i18n": "4.12.5",
+    "@strapi/plugin-users-permissions": "4.12.5",
+    "@strapi/provider-upload-cloudinary": "4.12.5",
+    "@strapi/strapi": "4.12.5",
     "axios": "^1.4.0",
     "pg": "8.6.0",
     "strapi-plugin-slugify": "^2.3.3"
