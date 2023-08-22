@@ -16,8 +16,8 @@ export default {
       }
     },
     options: {
-      // every day at 03:00
-      rule: "0 0 3 * * *",
+      // every day at 00:00 UTC
+      rule: "0 0 0 * * *",
     },
   },
 };
