@@ -11,4 +11,8 @@ export default ({ env }) => ({
       connectionString: env("DATABASE_URL", ""),
     },
   },
+  pool: {
+    // https://docs.strapi.io/dev-docs/configurations/database#database-pooling-options
+    min: 0,
+  },
 });
