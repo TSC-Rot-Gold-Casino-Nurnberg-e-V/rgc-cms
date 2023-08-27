@@ -13,8 +13,8 @@ export default {
       }
     },
     options: {
-      // every 3 hours
-      rule: "0 */3 * * *",
+      // every 2 hours
+      rule: "0 */2 * * *",
     },
   },
 };
