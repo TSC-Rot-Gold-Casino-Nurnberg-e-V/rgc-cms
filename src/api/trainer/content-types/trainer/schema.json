@@ -51,6 +51,17 @@
       "relation": "manyToMany",
       "target": "api::training.training",
       "inversedBy": "trainers"
+    },
+    "teams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team.team",
+      "mappedBy": "trainers"
+    },
+    "person": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::person.person"
     }
   }
 }
