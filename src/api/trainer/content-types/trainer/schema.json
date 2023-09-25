@@ -60,8 +60,15 @@
     },
     "person": {
       "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::person.person",
+      "inversedBy": "trainers"
+    },
+    "cheftrainer": {
+      "type": "relation",
       "relation": "oneToOne",
-      "target": "api::person.person"
+      "target": "api::cheftrainer.cheftrainer",
+      "inversedBy": "trainer"
     }
   }
 }

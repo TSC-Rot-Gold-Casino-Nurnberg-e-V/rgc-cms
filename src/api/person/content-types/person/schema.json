@@ -26,6 +26,18 @@
       "type": "media",
       "multiple": false,
       "required": true
+    },
+    "vorstandsmitglied": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::vorstandsmitglied.vorstandsmitglied",
+      "mappedBy": "person"
+    },
+    "trainers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trainer.trainer",
+      "mappedBy": "person"
     }
   }
 }

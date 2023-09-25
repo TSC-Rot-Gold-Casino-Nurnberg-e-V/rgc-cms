@@ -19,7 +19,8 @@
     "trainer": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::trainer.trainer"
+      "target": "api::trainer.trainer",
+      "inversedBy": "cheftrainer"
     }
   }
 }

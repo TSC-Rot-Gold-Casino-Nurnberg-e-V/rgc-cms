@@ -46,7 +46,8 @@
     "person": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::person.person"
+      "target": "api::person.person",
+      "inversedBy": "vorstandsmitglied"
     }
   }
 }
