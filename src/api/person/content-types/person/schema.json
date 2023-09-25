@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personen",
+  "info": {
+    "singularName": "person",
+    "pluralName": "personen",
+    "displayName": "Person"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vorname": {
+      "type": "string",
+      "required": true
+    },
+    "nachname": {
+      "type": "string",
+      "required": true
+    },
+    "bild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
