@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "choreos",
+  "info": {
+    "singularName": "choreo",
+    "pluralName": "choreos",
+    "displayName": "Choreo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
