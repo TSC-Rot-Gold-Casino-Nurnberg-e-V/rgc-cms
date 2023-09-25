@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ligen",
+  "info": {
+    "singularName": "liga",
+    "pluralName": "ligen",
+    "displayName": "Liga"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
