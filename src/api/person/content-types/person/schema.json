@@ -4,7 +4,8 @@
   "info": {
     "singularName": "person",
     "pluralName": "personen",
-    "displayName": "Person"
+    "displayName": "Person",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,15 +18,15 @@
     },
     "nachname": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "bild": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "vorstandsmitglied": {
       "type": "relation",
