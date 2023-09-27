@@ -30,6 +30,11 @@
       "relation": "oneToMany",
       "target": "api::team.team",
       "mappedBy": "formation"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titel",
+      "required": true
     }
   }
 }
