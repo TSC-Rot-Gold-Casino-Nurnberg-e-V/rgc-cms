@@ -30,6 +30,10 @@ module.exports = ({ env }) => ({
           field: "slug",
           references: "titel",
         },
+        formation: {
+          field: "slug",
+          references: "titel",
+        },
       },
     },
   },
