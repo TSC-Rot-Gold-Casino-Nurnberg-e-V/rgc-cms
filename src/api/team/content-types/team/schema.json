@@ -47,6 +47,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::liga.liga"
+    },
+    "bild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
