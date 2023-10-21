@@ -16,6 +16,14 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "beschreibung": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

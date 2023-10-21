@@ -33,11 +33,6 @@
       "relation": "oneToMany",
       "target": "api::person.person"
     },
-    "mitglieder": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::person.person"
-    },
     "choreo": {
       "type": "relation",
       "relation": "oneToOne",
@@ -47,6 +42,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::liga.liga"
+    },
+    "bild": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
