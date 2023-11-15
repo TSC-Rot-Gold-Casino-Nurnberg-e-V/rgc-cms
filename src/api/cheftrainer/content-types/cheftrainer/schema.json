@@ -20,7 +20,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::trainer.trainer",
-      "inversedBy": "cheftrainer"
+      "mappedBy": "cheftrainer"
     }
   }
 }
