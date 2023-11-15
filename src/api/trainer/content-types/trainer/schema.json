@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "beschreibung": {
       "type": "customField",
       "options": {
@@ -31,14 +26,6 @@
       "relation": "manyToMany",
       "target": "api::lizenz.lizenz",
       "inversedBy": "trainers"
-    },
-    "bild": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
     },
     "angebote": {
       "type": "relation",
