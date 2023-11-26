@@ -45,9 +45,9 @@
       "target": "api::trainer.trainer",
       "mappedBy": "trainings"
     },
-    "angebot": {
+    "angebote": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::angebot.angebot",
       "inversedBy": "trainings"
     }

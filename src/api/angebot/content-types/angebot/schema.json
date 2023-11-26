@@ -45,9 +45,9 @@
     },
     "trainings": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::training.training",
-      "mappedBy": "angebot"
+      "mappedBy": "angebote"
     }
   }
 }
