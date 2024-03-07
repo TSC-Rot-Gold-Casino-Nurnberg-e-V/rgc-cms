@@ -11,7 +11,7 @@ export default ({ env }) => ({
     populateRelations: false,
   },
   cron: {
-    enabled: false,
+    enabled: env("CRON_TASKS_ENABLED", false),
     tasks: cronTasks,
   },
 });
