@@ -857,7 +857,7 @@ export interface ApiAngebotAngebot extends Schema.CollectionType {
     slug: Attribute.UID<'api::angebot.angebot', 'titel'> & Attribute.Required;
     trainings: Attribute.Relation<
       'api::angebot.angebot',
-      'oneToMany',
+      'manyToMany',
       'api::training.training'
     >;
     createdAt: Attribute.DateTime;
@@ -1255,6 +1255,7 @@ export interface ApiOrtOrt extends Schema.CollectionType {
     singularName: 'ort';
     pluralName: 'orte';
     displayName: 'Ort';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1265,7 +1266,7 @@ export interface ApiOrtOrt extends Schema.CollectionType {
     hausnummer: Attribute.BigInteger;
     postleitzahl: Attribute.BigInteger & Attribute.Required;
     stadt: Attribute.String & Attribute.Required;
-    maps: Attribute.String;
+    maps: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1460,9 +1461,9 @@ export interface ApiTrainingTraining extends Schema.CollectionType {
       'manyToMany',
       'api::trainer.trainer'
     >;
-    angebot: Attribute.Relation<
+    angebote: Attribute.Relation<
       'api::training.training',
-      'manyToOne',
+      'manyToMany',
       'api::angebot.angebot'
     >;
     createdAt: Attribute.DateTime;
