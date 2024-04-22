@@ -35,6 +35,9 @@
     "maps": {
       "type": "string",
       "required": true
+    },
+    "parken": {
+      "type": "string"
     }
   }
 }

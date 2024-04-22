@@ -1267,6 +1267,7 @@ export interface ApiOrtOrt extends Schema.CollectionType {
     postleitzahl: Attribute.BigInteger & Attribute.Required;
     stadt: Attribute.String & Attribute.Required;
     maps: Attribute.String & Attribute.Required;
+    parken: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
