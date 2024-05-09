@@ -1278,6 +1278,43 @@ export interface ApiOrtOrt extends Schema.CollectionType {
   };
 }
 
+export interface ApiPartnerPartner extends Schema.SingleType {
+  collectionName: 'partners';
+  info: {
+    singularName: 'partner';
+    pluralName: 'partners';
+    displayName: 'Partner';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    inhalt: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'standard';
+        }
+      >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::partner.partner',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::partner.partner',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPersonPerson extends Schema.CollectionType {
   collectionName: 'personen';
   info: {
@@ -1709,6 +1746,7 @@ declare module '@strapi/types' {
       'api::lizenz.lizenz': ApiLizenzLizenz;
       'api::neuigkeit.neuigkeit': ApiNeuigkeitNeuigkeit;
       'api::ort.ort': ApiOrtOrt;
+      'api::partner.partner': ApiPartnerPartner;
       'api::person.person': ApiPersonPerson;
       'api::team.team': ApiTeamTeam;
       'api::trainer.trainer': ApiTrainerTrainer;
