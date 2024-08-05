@@ -1592,6 +1592,7 @@ export interface ApiVeranstaltungVeranstaltung extends Schema.CollectionType {
       'oneToOne',
       'api::ort.ort'
     >;
+    helfertool: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

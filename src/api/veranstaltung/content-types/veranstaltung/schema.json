@@ -41,6 +41,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::ort.ort"
+    },
+    "helfertool": {
+      "type": "string"
     }
   }
 }
