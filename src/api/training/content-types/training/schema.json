@@ -50,6 +50,9 @@
       "relation": "manyToMany",
       "target": "api::angebot.angebot",
       "inversedBy": "trainings"
+    },
+    "anmerkung": {
+      "type": "string"
     }
   }
 }

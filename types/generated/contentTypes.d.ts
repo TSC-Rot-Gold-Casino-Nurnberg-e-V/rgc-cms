@@ -1509,6 +1509,7 @@ export interface ApiTrainingTraining extends Schema.CollectionType {
       'manyToMany',
       'api::angebot.angebot'
     >;
+    anmerkung: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
