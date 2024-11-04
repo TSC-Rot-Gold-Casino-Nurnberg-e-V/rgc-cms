@@ -1211,6 +1211,7 @@ export interface ApiNeuigkeitNeuigkeit extends Schema.CollectionType {
     singularName: 'neuigkeit';
     pluralName: 'neuigkeiten';
     displayName: 'Neuigkeit';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1218,7 +1219,7 @@ export interface ApiNeuigkeitNeuigkeit extends Schema.CollectionType {
   attributes: {
     titel: Attribute.String & Attribute.Required & Attribute.Unique;
     datum: Attribute.DateTime & Attribute.Required & Attribute.Unique;
-    vorschaubild: Attribute.Media & Attribute.Required;
+    vorschaubild: Attribute.Media;
     vorschautext: Attribute.Text &
       Attribute.Required &
       Attribute.Unique &
@@ -1334,7 +1335,7 @@ export interface ApiPersonPerson extends Schema.CollectionType {
   attributes: {
     vorname: Attribute.String & Attribute.Required;
     nachname: Attribute.String;
-    bild: Attribute.Media & Attribute.Required;
+    bild: Attribute.Media;
     vorstandsmitglied: Attribute.Relation<
       'api::person.person',
       'oneToOne',

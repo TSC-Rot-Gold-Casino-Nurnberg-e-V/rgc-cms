@@ -4,7 +4,8 @@
   "info": {
     "singularName": "neuigkeit",
     "pluralName": "neuigkeiten",
-    "displayName": "Neuigkeit"
+    "displayName": "Neuigkeit",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,12 +23,12 @@
       "unique": true
     },
     "vorschaubild": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "vorschautext": {
       "type": "text",
