@@ -1170,6 +1170,37 @@ export interface ApiLigaLiga extends Schema.CollectionType {
   };
 }
 
+export interface ApiLivetickerLiveticker extends Schema.SingleType {
+  collectionName: 'livetickers';
+  info: {
+    singularName: 'liveticker';
+    pluralName: 'livetickers';
+    displayName: 'Liveticker';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Text: Attribute.Text & Attribute.Required;
+    Link: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::liveticker.liveticker',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::liveticker.liveticker',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiLizenzLizenz extends Schema.CollectionType {
   collectionName: 'lizenzen';
   info: {
@@ -1751,6 +1782,7 @@ declare module '@strapi/types' {
       'api::formation.formation': ApiFormationFormation;
       'api::impressum.impressum': ApiImpressumImpressum;
       'api::liga.liga': ApiLigaLiga;
+      'api::liveticker.liveticker': ApiLivetickerLiveticker;
       'api::lizenz.lizenz': ApiLizenzLizenz;
       'api::neuigkeit.neuigkeit': ApiNeuigkeitNeuigkeit;
       'api::ort.ort': ApiOrtOrt;

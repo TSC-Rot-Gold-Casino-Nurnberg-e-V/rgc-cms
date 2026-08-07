@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "livetickers",
+  "info": {
+    "singularName": "liveticker",
+    "pluralName": "livetickers",
+    "displayName": "Liveticker"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Text": {
+      "type": "text",
+      "required": true
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}
